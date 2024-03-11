@@ -9,3 +9,11 @@
   min-height: 100vh;
   display: flex;
 }
+
+.main .bottom-info{
+  font-size: 13px;
+  margin: 15px auto;
+  text-align: center;
+  font-weight: 300;
+
+}

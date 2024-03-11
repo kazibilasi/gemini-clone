@@ -25,19 +25,37 @@ function Main() {
                     </div>
                     <div className='card'>
                         <p>Briefly summarize this concept : urban planning</p>
-                        <img src={assets.bulb_icon_icon}></img>
+                        <img src={assets.bulb_icon}></img>
 
                     </div>
                     <div className='card'>
                         <p>Brainstorm team bonding activities for our work retreat</p>
-                        <img src={assets.message_icon_icon}></img>
+                        <img src={assets.message_icon}></img>
 
                     </div>
                     <div className='card'>
                         <p>Improve the readability fo the following code</p>
-                        <img src={assets.code_icon_icon}></img>
+                        <img src={assets.code_icon}></img>
 
                     </div>
+
+                </div>
+
+                <div className='main-bottom'>
+                    <div className='search-box'>
+                        <input type='text' placeholder='Enter a prompt here'></input>
+                        <div>
+                            <img src={assets.gallery_icon}></img>
+                            <img src={assets.mic_icon}></img>
+                            <img src={assets.send_icon}></img>
+                        </div>
+
+
+                    </div>
+                    <p className='bottom-info'>
+                        Gemini may display inaccurate info, include about people, so double-check its responses. Your privacy and Gemini Apps
+                    </p>
+
 
                 </div>
             </div>
