@@ -1,10 +1,13 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Sidebar.css'
 import { assets } from '../../assets/assets'
+import { Context } from '../../context/Context'
 function Sidebar() {
 
     const [extended, setExtended] = useState(false)
+    const { onSent, prevPrompts, setRecentPrompt } = useContext(Context)
     return (
         <div className='sidebar'>
             <div className='top'>
@@ -15,10 +18,17 @@ function Sidebar() {
                 </div>
                 {extended ? <div className='recent'>
                     <div className='recent-title'>Recent</div>
-                    <div className='recent-entry'>
-                        <img src={assets.message_icon}></img>
-                        <p>what is react........</p>
-                    </div>
+                    {/* {
+                        prevPrompts.map((item, index) => {
+                            return (
+                                <div className='recent-entry'>
+                                    <img src={assets.message_icon}></img>
+                                    <p>{item.slice(0,18)}........</p>
+                                </div>
+                            )
+                        })
+                    } */}
+
                 </div> : null}
             </div>
             <div className='bottom'>
