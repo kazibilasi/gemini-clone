@@ -48,12 +48,12 @@ function Main() {
                 </> : <div className='result'>
                     <div className='result-title'>
                         <img src={assets.user_icon}></img>
-                        <p>{}</p>
+                        <p>{recentPrompt}</p>
 
                     </div>
                     <div className='result-data'>
                         <img src={assets.gemini_icon}></img>
-                        <p>{}</p>
+                        <p dangerouslySetInnerHTML={{__html:resultData}}></p>
 
                     </div>
                 </div>}
